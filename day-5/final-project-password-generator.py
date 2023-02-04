@@ -35,7 +35,5 @@ pwd_list = list(pwd)
 random.shuffle(pwd_list)
 pwd_shuffled = ''.join(pwd_list)
 
-print (let + num + sym)
-print(pwd)
-print(pwd_shuffled)
+print(f"Your password is {pwd_shuffled}")
 

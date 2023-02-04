@@ -25,11 +25,6 @@ position = input("Where do you want to put the treasure? ")
 y = int(position[0])
 x = int(position[1])
 
-print(position)
-print(y)
-print(type(y))
-print(type(x))
-
 if x == 1:
     row1[y-1] = 'X '
 elif x == 2:

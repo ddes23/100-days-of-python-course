@@ -14,7 +14,7 @@ nesting = {
     "Germany": "Berlin",
 }
 
-#Nesting a List in a Dictionary. Each key can only have one value.
+#Nesting Dictionaries in a List. Data types in dictionaries can be different types. 
 
 travel_log = [
     {

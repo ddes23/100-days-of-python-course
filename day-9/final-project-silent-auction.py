@@ -22,7 +22,6 @@ while auction_open:
         clear()
 
 winner = max(bid_records, key=bid_records.get)
-print(bid_records)
 print(f"The winner is {winner} with a bid of ${bid_records[winner]}")
 
 

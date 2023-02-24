@@ -8,6 +8,8 @@ print(logo)
 print("\nWelcome to the Number Guessing Game! ")
 game_difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ")
 all_possible_numbers = list(range(1,101))
+# By default we assume the player loses and we only update if they win
+player_won = False
 
 if game_difficulty == "easy":
     clear()
@@ -34,7 +36,11 @@ if game_difficulty == "easy":
         elif guess == correct_number:
             print(f"You got it! the answer was {correct_number}")
             lives = 0
-    print("You lose!")
+            player_won = True
+
+    # For simple checks you can do the if/else inline :)
+    print("You Win!" if player_won == True else "You lose!")
+
 elif game_difficulty == "hard":
     clear()
     correct_number = random.choice(all_possible_numbers)
@@ -60,5 +66,8 @@ elif game_difficulty == "hard":
         elif guess == correct_number:
             print(f"You got it! the answer was {correct_number}")
             lives = 0
-    print("You lose!")
+            player_won = True
+
+    # For simple checks you can do the if/else inline :)
+    print("You Win!" if player_won == True else "You lose!")
     

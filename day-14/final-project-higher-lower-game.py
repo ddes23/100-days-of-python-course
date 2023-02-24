@@ -3,14 +3,17 @@ import os
 from art import logo, vs
 from game_data import data
 
+
 def clear():
     os.system('clear')
+
 
 def compare_followers(A, B):
     if A > B:
         return "A"
     else:
         return "B"
+
 
 def first_round():
     global score
@@ -36,6 +39,7 @@ def first_round():
     else:
         end_game()
 
+
 def other_rounds():
     global game_over
     global score
@@ -60,6 +64,8 @@ def other_rounds():
     else:
         clear()
         game_over = True
+
+
 def end_game():
     global score
     print(logo)
@@ -68,9 +74,10 @@ def end_game():
 
 def play_game():
     first_round()
-    while game_over == False:
+    while not game_over:
         other_rounds()
     end_game()
+
 
 option_a = random.choice(data)
 game_over = False

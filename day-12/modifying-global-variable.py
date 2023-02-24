@@ -29,3 +29,10 @@ def increase_enemies():
 
 enemies = increase_enemies()
 print(f"enemies outside function: {enemies}")
+
+#Global Constants - turn it into all upper case
+
+PI = 3.14159
+URL = "www.google.com"
+
+
